@@ -859,4 +859,14 @@ line-height: 30px;
   flex: 1;
   text-align: left;
 }
+.box {
+  opacity: 0;
+  transform: translateY(120px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 }
